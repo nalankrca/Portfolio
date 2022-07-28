@@ -1,0 +1,35 @@
+@import "../styles/variables/Variables.scss";
+
+
+.navbar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 26%;
+    height:100%;
+    background-color: $whiteColor;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+
+    a{
+        color : $grayColor;
+        font-size: 30px;
+        width: 100%;
+        display:block;
+        text-decoration: none;
+        margin: 20px;
+    
+    
+    }
+    .namee{
+        position:fixed;
+        top :5%;
+        left: 5%;
+        color : $grayColor;
+        font-size:50px;
+    }
+ 
+
+}
