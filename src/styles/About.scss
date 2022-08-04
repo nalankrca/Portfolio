@@ -1,12 +1,129 @@
-.about{
-  
-    font-family: 'Dosis', sans-serif;
+@import "../styles/variables/Variables.scss";
 
+.container{
+    position: relative;
+    /*background-color: aqua;*/
+    top:5rem;
+    left: 12rem;
+    width: 65vw;
+    color:$grayColor;
+    font-family: $fontMontserrat;
+
+    .aboutme{
+        background-color: $darkGrayColor;
+        border-radius: 5px;
+        margin-bottom: 2rem;
+        padding: 0.5rem;
+        max-width:max-content;
+
+        h1{
+            font-size:larger;
+        }
+        
+    }
 
     .img{
-        height: 200px;
-        width: 200px;
+        width:fit-content;
+    }
+
+        .name{
+            padding-top: 2.5rem;
+            h1{
+                color:black;
+                font-weight: 800;
+                font-size: 2rem;
+                padding-bottom: 1rem;
+            }
+        }
+
+
+        .cnt{
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color:$darkGrayColor;
+
+
+        }
+        
+    .info-con{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    
+        .topic{
+
+            label{
+
+                color:black;
+                font-weight:500;
+            }
+        }
+        
+        div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            width: fit-content;
+
+            label{
+                margin: 3px;
+            }
+        }
+    }
+    
+    .container-progress{
+
+    background-color: $whiteColor;
+        h2{
+            padding-left: 0.6rem;
+        }
+        .progress-bar{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: left;
+        
+            div{
+                margin: 0.25rem;
+                padding-bottom: 0.5rem;
+
+            
+            }
+            h4{
+                font-size: medium;
+                margin-left: 3px;
+            }
+        }
+        
+
+
 
     }
-   
+
+    .education{
+
+        .container-cub{
+             display: grid;
+             grid-template-columns: 1f1,1fr;
+
+            .cub{
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                margin-top: 1rem;
+
+
+            }
+            p{
+
+                background-color: $darkGrayColor;
+                max-width: fit-content;
+                border-radius: 2rem;
+                padding: 0.75rem;
+                margin-top: 1rem;
+
+            }
+        }
+
+    }
 }
+  

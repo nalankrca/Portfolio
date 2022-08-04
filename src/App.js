@@ -1,23 +1,20 @@
 
 import React from "react";
 import Navi from "./components/nav/Nav";
+//import {Container,Row,Col} from "react-bootstrap";
+//import Home from "./components/home/Home";
 import About from "./components/about/About";
-import {Row,Col} from "reactstrap";
 
 
 
 function App() {
   return (
     <div className="App" >
-      <Row>
-        <Col md="3"><Navi/></Col>
-        <Col md="9"><About/></Col>
+        <Navi/>
+        <About/>
 
-      </Row>
-          
-          
     </div>
-  );
+);
 }
 
 export default App;

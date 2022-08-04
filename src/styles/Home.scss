@@ -1,0 +1,70 @@
+@import "../styles/variables/Variables.scss";
+
+.home{
+   
+    font-family:$fontMontserrat;
+
+    .conainer{
+        color: $grayColor;
+        top:12rem;
+        left:30rem;
+        right: 2rem;
+        width: 65vw;
+        position: relative;
+       
+
+        .container-grid{
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+            justify-content: center;
+            align-items: center;
+          
+        }
+
+        .container-info{
+            padding: 1.5rem;
+
+            .name h1{
+               color:black;
+                font-size:5rem;
+                
+                font-weight: 800;
+                
+            }
+        }
+        .img{
+            border-radius: 1.5rem;
+            height:250px;
+            width: 250px;
+            opacity: 0.8;
+    
+        }
+
+
+
+
+    }
+
+ 
+   
+
+}
+ 
+
+//Social
+
+.social {
+    
+    
+    a{
+    margin: 0.25rem;
+    color:black;
+    width: 30px;
+    height: 30px;
+    }
+
+    .social a:hover{
+        color:#333;
+
+    }
+}

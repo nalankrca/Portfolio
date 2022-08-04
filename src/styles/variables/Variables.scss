@@ -1,10 +1,17 @@
 //FA
 $whiteColor :rgb(255, 255, 255);
+$lihtColor:rgb(245, 242, 242);
 $grayColor: rgb(110, 106, 106);
+$darkGrayColor:rgb(214, 213, 213);
 
 
 // FONT
-$titleFont: Arial, Helvetica, sans-serif;
-$bodyFont : 'Times New Roman', Times, serif;
 @import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800&display=swap');
+
+$titleFont: Arial, Helvetica, sans-serif;
+$bodyFont : 'Times New Roman', Times, serif;
+$eduFont:'Edu NSW ACT Foundation', cursive;
+$dosisFont:'Dosis', sans-serif;
+$fontMontserrat:'Montserrat', sans-serif;
