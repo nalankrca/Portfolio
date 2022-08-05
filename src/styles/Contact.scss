@@ -1,0 +1,15 @@
+@import "../styles/variables/Variables.scss";
+
+.container{
+    position: relative;
+    /*background-color: aqua;*/
+    top:5rem;
+    left: 12rem;
+    width: 65vw;
+    color:$grayColor;
+    font-family: $fontMontserrat;
+    background-color: aquamarine;
+
+
+    
+}

@@ -8,8 +8,8 @@ return(
 
     <div className='social'>
 
-        <a href='https://www.linkedin.com/in/nalan-karaca-653238143/'  ><BsLinkedin/></a>
-        <a href='https://github.com/nalankrca'  ><BsGithub/></a>
+        <a href='https://www.linkedin.com/in/nalan-karaca-653238143/' rel='noreferrer' target="_blank"  ><BsLinkedin/></a>
+        <a href='https://github.com/nalankrca' rel='noreferrer' target="_blank" ><BsGithub/></a>
        
     </div>
 );

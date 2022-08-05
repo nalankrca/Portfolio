@@ -11,7 +11,7 @@
 
     .aboutme{
         background-color: $darkGrayColor;
-        border-radius: 5px;
+        color:black;
         margin-bottom: 2rem;
         padding: 0.5rem;
         max-width:max-content;
@@ -48,7 +48,7 @@
         
     .info-con{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 3.5fr;
     
         .topic{
 
@@ -69,13 +69,28 @@
                 margin: 3px;
             }
         }
+
+
+        
+    }
+
+    .btn{
+        background-color: black;
+        color:$whiteColor;
+        padding: 0.75rem;
     }
     
     .container-progress{
 
     background-color: $whiteColor;
         h2{
+            padding-top: 1rem;
             padding-left: 0.6rem;
+            padding-bottom: 1rem;
+            font-size:large;
+            font-weight: 700;
+            color: black;
+            
         }
         .progress-bar{
             display: grid;
@@ -86,44 +101,89 @@
                 margin: 0.25rem;
                 padding-bottom: 0.5rem;
 
-            
             }
             h4{
                 font-size: medium;
                 margin-left: 3px;
             }
         }
-        
-
-
 
     }
 
-    .education{
+        .education-experiance-conteiner{
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                h1{
+                    font-size:large;
+                    font-weight: 700;
+                    color: black;
+                }
+                .container-grid{
+                .container-cub{
+                    max-height: fit-content;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    .container-cub-row{
+                        display: flex;
+                        flex-direction:row;
+                        max-height: fit-content;
+                        .cub{
+                            p{
+                                margin-top:1.3rem ;
+                            }
+                        }
 
-        .container-cub{
-             display: grid;
-             grid-template-columns: 1f1,1fr;
+                        div{
+                            
+                            margin: 2px;
+                            padding: 5px;
+                            max-width: max-content;
 
-            .cub{
-                display: flex;
-                flex-direction: column;
-                flex-wrap: nowrap;
-                margin-top: 1rem;
+                        }
 
 
+                        p{
+                            background-color: $darkGrayColor;
+                            max-width: fit-content;
+                            border-radius: 2rem;
+                            padding: 0.75rem;
+                            margin-top: 0.75rem;
+                            max-width:max-content;
+            
+                        }
+                    }
+                        .info-cub{
+                            max-width: max-content;
+                            margin-top: 1.2rem;
+                            margin-left: 1.2rem;
+
+                            h4{
+                                font-size:medium;
+                                font-weight: 700;
+                                color: black;
+                            }
+                            h6{
+                                font-size: small;
+                                color:$grayColor;
+                            }
+                            .gir{
+                                margin-left: 2rem;
+                            }
+                            
+                        }
+                    
+
+                }
             }
-            p{
 
-                background-color: $darkGrayColor;
-                max-width: fit-content;
-                border-radius: 2rem;
-                padding: 0.75rem;
-                margin-top: 1rem;
-
-            }
         }
 
+        
+}
+
+.colorr{
+    .progress-bar{
+        background-color: black !important;
     }
 }
   

@@ -2,7 +2,8 @@ import React from 'react';
 import '../../styles/About.scss';
 import Img from '../img/img2.jpg';
 import {ProgressBar} from 'react-bootstrap';
-
+import CV from "../img/nalanKaracaCV.pdf";
+import InfoAboute from './InfoAboute';
 
 const About = () =>{
 
@@ -29,42 +30,17 @@ const About = () =>{
       Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
       deserunt!</p>
       <hr/>
-
-      <form className='cnt'>
-        <div className='info-con'>
-          <div className='topic'>
-            <label for="fname">Birthday:</label>
-            <label for="age">Age:</label>
-            <label for="addres">Address:</label>
-            <label for="phone">Phone:</label>
-          </div>
-          <div  className='information'> 
-            <label>17/10/1996</label>
-            <label>25</label>
-            <label>izmir</label>
-            <label>0(545)xxx xx xx</label>
-          </div>
-        </div >
-        <div className='info-con'>
-          <div className='topic'>
-            <label for="nationality">Nationality:</label>
-            <label for="study">Study:</label>
-            <label for="degree">Degree:</label>
-            <label for="interests">Interests:</label>
-          </div>
-          <div > 
-            <label>Turkey</label>
-            <label>Dokuz Eylül Univercity</label>
-            <label>Lisans</label>
-            <label>Latin Dance</label>
-          </div>
-        </div>
-      </form> 
+        <InfoAboute />
+      
       <hr/>
+       
 
-       <button type='submit'>Download CV</button> 
+       <a href={CV} download className='btn'>Download CV</a>
        <br/>
        <br/>
+       <br/>
+       <br/>
+
 
 
 
@@ -75,18 +51,18 @@ const About = () =>{
                   <h4>Reactjs</h4>
                   <ProgressBar className='colorr' variant="success" now={35} /> 
                     <h4>JavaScript</h4>
-                    <ProgressBar now={40} />
+                    <ProgressBar className='colorr' now={40} />
                     <h4>HTML & CSS:</h4>
-                    <ProgressBar now={35} />
+                    <ProgressBar className='colorr' now={35} />
 
             </div>  
             <div>
                     <h4>Python</h4>
-                    <ProgressBar now={55} />
+                    <ProgressBar className='colorr' now={55} />
                     <h4>C</h4>
-                    <ProgressBar now={60} />
+                    <ProgressBar className='colorr' now={60} />
                     <h4>Sql Server</h4>
-                    <ProgressBar now={65} />
+                    <ProgressBar className='colorr' now={65} />
               
             </div> 
       
@@ -94,25 +70,84 @@ const About = () =>{
     </section>
 
     
+    <hr/>
+   <br/>
+   <br/>
 
-    <div className='education'>
-      <div className='container-cub'>
-        <div className='cub'><p></p></div>
-        <div><p>2018-2023</p></div>
-      </div>
-      <div className='container-cub'>
-        <div className='cub'><p></p></div>
-        <div><p>2015-2016</p></div>
-      </div>
-      <div className='container-cub'>
-        <div className='cub'><p></p></div>
-        <div><p>2010-2014</p></div>
-      </div>
+   
+    <div className='education-experiance-conteiner'>
+        <div className='container-grid'>
+                  <h1>Education</h1>
+                  <div className='container-cub'>
+                      <div className='container-cub-row'>
+                        <div className='cub'><p></p></div>
+                        <div><p>2018-2023</p></div>
+                      </div>
+                    <div className='info-cub'>
+                          <h4>Dokuz Eylül Universty</h4>
+                          <h6>Computer Science</h6>
+                    </div>
+                 </div>  
+
+                  <div className='container-cub'>
+                      <div className='container-cub-row'>
+                        <div className='cub'><p></p></div>
+                        <div><p>2015-2016</p></div>
+                      </div>
+                      <div className='info-cub'>
+                        <h4>Dokuz Eylül Universty</h4>
+                        <h6>Computer Programming</h6>
+                      </div>
+                  </div>   
+
+                    <div className='container-cub'>
+                        <div className='container-cub-row'>
+                          <div className='cub'><p></p></div>
+                          <div><p>2010-2014</p></div>
+                        </div>
+                      <div className='info-cub'>
+                       <h4>Fener High School</h4>
+                       <h6>Computer Science</h6>
+                      </div>
+                   </div>     
+          </div>
+     
 
 
 
+          <div className='container-grid'>
+                  <h1>Experiance</h1>
+                  <div className='container-cub'>
+                    <div className='container-cub-row'>
+                      <div className='cub'><p></p></div>
+                      <div><p>2022-</p></div>
+                    </div>
+                    <div className='info-cub gir'>
+                        <h4>İs Net</h4>
+                        <h6>Intern Frontend Developer</h6>
+                     </div> 
+                  </div>
+          
 
-    </div>
+                  <div className='container-cub'>
+                      <div className='container-cub-row'>
+                        <div className='cub'><p></p></div>
+                        <div><p>2016-2016</p></div>
+                        </div>
+                        <div className='info-cub'>
+                          <h4>Univera</h4>
+                          <h6>Intern</h6>
+                        </div>      
+                  </div>  
+          
+</div>
+</div>
+    
+
+
+
+    
+   
     
    <hr/>
    <br/>
