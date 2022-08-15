@@ -1,4 +1,3 @@
-@import "../styles/variables/Variables.scss";
 
 
 .navbar{
@@ -24,19 +23,68 @@
     
     }
     .namee{
-        position:fixed;
+        position:absolute;
+        justify-content: center;
         top :5%;
-        left: 4%;
+        left: 15%;
         color : black;
-        font-size:50px;
-
+        max-width:max-content;
         p{
             margin-top: 2rem;
-           font-size:2.5rem;
+           font-size:2rem;
             font-weight: 600;
-            max-width:max-content;
+
         }
     }
  
 
 }
+.hamburgerActivate{
+    display: none ;
+}
+
+
+
+@media (max-width:767px) {
+    .navbar {
+        position: relative ;
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        z-index: 1;
+        .namee{
+            position: relative;
+            left: 18px;
+            top: -7px;
+            p{
+                color: white;
+                font-size: 20px;
+            }
+        }
+        .hamburgerActivate{
+            display: flex;
+            position: absolute;
+            right: 0;
+            width: 40px;
+        }
+        .linkk {
+            position: absolute;
+            top: 100px;
+            background-color: black;
+            width: 100%;
+            z-index: 1;
+        }
+        a{
+            color: white;
+        }
+    }
+
+}
+
+
+
+
+

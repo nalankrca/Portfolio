@@ -1,6 +1,5 @@
 import React from 'react';
-import Img from '../img/img2.jpg';
-import '../../styles/Home.scss';
+import Img from '../img/nalan.png';
 import Social from '../socials/Socials';
 //import {Container} from "react-bootstrap";
 const Home = () =>{
@@ -9,7 +8,7 @@ const Home = () =>{
         <div className='home'>
 
    
-         <div className='conainer'>
+         <div className='container'>
             <div className='container-grid'>
             <div className='about-img'><img  src={Img} alt="" className='img'/></div>
             <div className='container-info'>
@@ -19,9 +18,7 @@ const Home = () =>{
                <div className='about-me'>
                   <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
               Perspiciatis nostrum, eaque velit ipsam facilis sed, quisquam
-              nesciunt unde nihil voluptatum commodi consequuntur molestiae?
-              Fugiat, perspiciatis reprehenderit. Architecto delectus vitae
-              deserunt!</p>
+              nesciunt unde nihil voluptatum commodi consequuntur molestiae?</p>
                </div>
                <div className='social'><Social/> </div>   
             </div>

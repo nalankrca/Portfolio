@@ -1,14 +1,8 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "./styles/variables/Variables.scss";
+@import "./styles/About.scss";
+@import "./styles/Contact.scss";
+@import "./styles/Home.scss";
+@import "./styles/media.scss";
+@import "./styles/Navbar.scss";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}

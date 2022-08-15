@@ -1,8 +1,10 @@
-import React from 'react';
+
+import React, { useState } from 'react';
+import {CgMenu} from 'react-icons/cg';
 import {Link} from 'react-router-dom';
 
-const Nav = () =>{
- 
+const MobileNav = () =>{
+ const [openMenu,setOpenMenu ] = useState(false);
 
 
     return (
@@ -11,14 +13,23 @@ const Nav = () =>{
               
                   <div className='namee nameham'>
                     <p className='ham'>Nalan Karaca</p>
-                  </div>            
+                  </div>
+                  
+                  <a href='#menu'className='hamburgerActivate' onClick={()=> setOpenMenu(!openMenu)} ><CgMenu/></a>
+                  {
+                    openMenu && (                  
                     <div className='linkk'>
                     <Link to='/home'  > Home</Link>
                     <Link to='/about'  > About</Link>
                     <Link to='/contact' > Contact</Link>               
                 </div>
+                )
+                  }
+
+            
+
         </div>
     
       );
 }
-export default Nav;
+export default MobileNav;

@@ -1,8 +1,6 @@
 import React from "react";
-import '../../styles/About.scss';
 
-
-const InfoAboute = () => {
+const InfoAboute = (props) => {
 
 
     return(
@@ -10,18 +8,18 @@ const InfoAboute = () => {
         <div>
             <form className='cnt'>
                 <div className='info-con'>
-                <div className='topic'>
-                    <label htmlFor="fname">Birthday:</label>
-                    <label htmlFor="age">Age:</label>
-                    <label htmlFor="addres">Address:</label>
-                    <label htmlFor="phone">Phone:</label>
-                </div>
-                <div  className='information'> 
-                    <label>17/10/1996</label>
-                    <label>25</label>
-                    <label>izmir</label>
-                    <label>0(545)xxx xx xx</label>
-                </div>
+                    <div className='topic'>
+                        <label htmlFor="fname">Birthday:</label>
+                        <label htmlFor="age">Age:</label>
+                        <label htmlFor="addres">Address:</label>
+                        <label htmlFor="phone">Phone:</label>
+                    </div>
+                    <div  className='information'> 
+                        <label>{props.birthday}</label>
+                        <label>{props.age}</label>
+                        <label>{props.address}</label>
+                        <label>{props.phone}</label>
+                    </div>
                 </div >
                 <div className='info-con'>
                 <div className='topic'>
@@ -31,10 +29,10 @@ const InfoAboute = () => {
                     <label htmlFor="interests">Interests:</label>
                 </div>
                 <div > 
-                    <label>Turkey</label>
-                    <label>Dokuz Eylül Univercity</label>
-                    <label>Lisans</label>
-                    <label>Latin Dance</label>
+                    <label>{props.nationality}</label>
+                    <label>{props.study}</label>
+                    <label>{props.degree}</label>
+                    <label>{props.intetests}</label>
                 </div>
                 </div>
       </form> 

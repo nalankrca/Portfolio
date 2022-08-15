@@ -1,15 +1,21 @@
-@import "../styles/variables/Variables.scss";
-
-.container{
-    position: relative;
-    /*background-color: aqua;*/
-    top:5rem;
-    left: 12rem;
-    width: 65vw;
-    color:$grayColor;
-    font-family: $fontMontserrat;
-    background-color: aquamarine;
 
 
-    
+.container-contact{
+    top: 10rem;
+}
+h2{
+    color: black;
+    margin-bottom: 1.5rem;
+    background-color:$darkGrayColor;
+    max-width: max-content;
+    padding: 0.25rem;
+    border-radius: 5px;
+}
+
+@media (max-width:767px) {
+   
+    .container-contact{
+        top:5rem;
+
+    }
 }
