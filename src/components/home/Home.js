@@ -9,7 +9,7 @@ const Home = () =>{
 
    
          <div className='container'>
-            <div className='container-grid'>
+            <div className='container-grid home'>
             <div className='about-img'><img  src={Img} alt="" className='img'/></div>
             <div className='container-info'>
                <div className='name'>

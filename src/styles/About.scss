@@ -152,6 +152,16 @@
             margin-top: 1rem;
         }
     }
+    .education-experience-conteiner{
+        display: flex !important;
+        flex-direction: column;
+    }
+    .about-img{
+        background-color: bisque;
+        img{
+            align-items: center;
+        }
+    }
 
 }
   
